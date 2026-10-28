@@ -1,0 +1,32 @@
+name: Restore remaining Salt Road media
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/restore-salt-road-media.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  restore-media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download remaining production media
+        shell: bash
+        run: |
+          mkdir -p pages/the-salt-road-to-lampedusa/assets
+          curl --fail --location 'https://dashebooks.com/assets/dashe-books-logo.png' --output pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png
+          curl --fail --location 'https://dashebooks.com/assets/index-BXDm2d3O.js' --output pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js
+          curl --fail --location 'https://dashebooks.com/assets/salt-road-back.png' --output pages/the-salt-road-to-lampedusa/assets/salt-road-back.png
+          curl --fail --location 'https://dashebooks.com/assets/salt-road-front.png' --output pages/the-salt-road-to-lampedusa/assets/salt-road-front.png
+      - name: Commit files and remove this temporary workflow
+        shell: bash
+        run: |
+          rm -f .github/workflows/restore-salt-road-media.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pages/the-salt-road-to-lampedusa/assets .github/workflows/restore-salt-road-media.yml
+          git commit -m "Add remaining Salt Road media and remove temporary workflow"
+          git push
