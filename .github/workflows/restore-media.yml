@@ -1,0 +1,121 @@
+name: Restore website media
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/restore-media.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  restore-media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download current production media
+        shell: bash
+        run: |
+          mkdir -p "$(dirname 'assets/books/abduction-catalogue.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/abduction-catalogue.webp' --output 'assets/books/abduction-catalogue.webp'
+          mkdir -p "$(dirname 'assets/books/advance-forgiveness.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/advance-forgiveness.webp' --output 'assets/books/advance-forgiveness.webp'
+          mkdir -p "$(dirname 'assets/books/at-thy-word.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/at-thy-word.webp' --output 'assets/books/at-thy-word.webp'
+          mkdir -p "$(dirname 'assets/books/be-still-and-know.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/be-still-and-know.webp' --output 'assets/books/be-still-and-know.webp'
+          mkdir -p "$(dirname 'assets/books/bermuda-triangle.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/bermuda-triangle.webp' --output 'assets/books/bermuda-triangle.webp'
+          mkdir -p "$(dirname 'assets/books/border-between-dreams-and-death.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/border-between-dreams-and-death.webp' --output 'assets/books/border-between-dreams-and-death.webp'
+          mkdir -p "$(dirname 'assets/books/checkmate-moment.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/checkmate-moment.webp' --output 'assets/books/checkmate-moment.webp'
+          mkdir -p "$(dirname 'assets/books/courage-to-breathe-again.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/courage-to-breathe-again.webp' --output 'assets/books/courage-to-breathe-again.webp'
+          mkdir -p "$(dirname 'assets/books/data-science-of-dating.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/data-science-of-dating.webp' --output 'assets/books/data-science-of-dating.webp'
+          mkdir -p "$(dirname 'assets/books/dialectic-of-freedom.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/dialectic-of-freedom.webp' --output 'assets/books/dialectic-of-freedom.webp'
+          mkdir -p "$(dirname 'assets/books/eat-that-frog-first.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/eat-that-frog-first.webp' --output 'assets/books/eat-that-frog-first.webp'
+          mkdir -p "$(dirname 'assets/books/even-the-trembling-walks.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/even-the-trembling-walks.webp' --output 'assets/books/even-the-trembling-walks.webp'
+          mkdir -p "$(dirname 'assets/books/garden-within.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/garden-within.webp' --output 'assets/books/garden-within.webp'
+          mkdir -p "$(dirname 'assets/books/growing-minds-wired-world.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/growing-minds-wired-world.webp' --output 'assets/books/growing-minds-wired-world.webp'
+          mkdir -p "$(dirname 'assets/books/how-to-become-dangerous.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/how-to-become-dangerous.webp' --output 'assets/books/how-to-become-dangerous.webp'
+          mkdir -p "$(dirname 'assets/books/how-to-escape-situationships.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/how-to-escape-situationships.webp' --output 'assets/books/how-to-escape-situationships.webp'
+          mkdir -p "$(dirname 'assets/books/improve-bone-health-ayurvedic.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/improve-bone-health-ayurvedic.webp' --output 'assets/books/improve-bone-health-ayurvedic.webp'
+          mkdir -p "$(dirname 'assets/books/in-the-god-class.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/in-the-god-class.webp' --output 'assets/books/in-the-god-class.webp'
+          mkdir -p "$(dirname 'assets/books/integration-or-nationalism.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/integration-or-nationalism.webp' --output 'assets/books/integration-or-nationalism.webp'
+          mkdir -p "$(dirname 'assets/books/king-x-american-soul.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/king-x-american-soul.webp' --output 'assets/books/king-x-american-soul.webp'
+          mkdir -p "$(dirname 'assets/books/lego-bridge-chester-le-street.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/lego-bridge-chester-le-street.webp' --output 'assets/books/lego-bridge-chester-le-street.webp'
+          mkdir -p "$(dirname 'assets/books/light-still-lives-here.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/light-still-lives-here.webp' --output 'assets/books/light-still-lives-here.webp'
+          mkdir -p "$(dirname 'assets/books/lust-for-more.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/lust-for-more.webp' --output 'assets/books/lust-for-more.webp'
+          mkdir -p "$(dirname 'assets/books/man-with-seven-names.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/man-with-seven-names.webp' --output 'assets/books/man-with-seven-names.webp'
+          mkdir -p "$(dirname 'assets/books/mindful-morning.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/mindful-morning.webp' --output 'assets/books/mindful-morning.webp'
+          mkdir -p "$(dirname 'assets/books/mystery-of-blood.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/mystery-of-blood.webp' --output 'assets/books/mystery-of-blood.webp'
+          mkdir -p "$(dirname 'assets/books/neither-do-i-condemn-you.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/neither-do-i-condemn-you.webp' --output 'assets/books/neither-do-i-condemn-you.webp'
+          mkdir -p "$(dirname 'assets/books/never-waste-a-hello.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/never-waste-a-hello.webp' --output 'assets/books/never-waste-a-hello.webp'
+          mkdir -p "$(dirname 'assets/books/salt-road-to-lampedusa.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/salt-road-to-lampedusa.webp' --output 'assets/books/salt-road-to-lampedusa.webp'
+          mkdir -p "$(dirname 'assets/books/stars-trees-echoes.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/stars-trees-echoes.webp' --output 'assets/books/stars-trees-echoes.webp'
+          mkdir -p "$(dirname 'assets/books/way-of-clarity.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/way-of-clarity.webp' --output 'assets/books/way-of-clarity.webp'
+          mkdir -p "$(dirname 'assets/books/wealth-operating-system.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/wealth-operating-system.webp' --output 'assets/books/wealth-operating-system.webp'
+          mkdir -p "$(dirname 'assets/books/when-no-one-else-will.webp')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/when-no-one-else-will.webp' --output 'assets/books/when-no-one-else-will.webp'
+          mkdir -p "$(dirname 'assets/dashe-books-logo-on-dark.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo-on-dark.png' --output 'assets/dashe-books-logo-on-dark.png'
+          mkdir -p "$(dirname 'assets/dashe-books-logo-seven-names.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo-seven-names.png' --output 'assets/dashe-books-logo-seven-names.png'
+          mkdir -p "$(dirname 'assets/dashe-books-logo.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo.png' --output 'assets/dashe-books-logo.png'
+          mkdir -p "$(dirname 'pages/never-waste-a-hello/back-cover.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/back-cover.png' --output 'pages/never-waste-a-hello/back-cover.png'
+          mkdir -p "$(dirname 'pages/never-waste-a-hello/cover.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/cover.png' --output 'pages/never-waste-a-hello/cover.png'
+          mkdir -p "$(dirname 'pages/never-waste-a-hello/dashe-books-logo.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/dashe-books-logo.png' --output 'pages/never-waste-a-hello/dashe-books-logo.png'
+          mkdir -p "$(dirname 'pages/never-waste-a-hello/kehinde-ojo-author.jpg')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/kehinde-ojo-author.jpg' --output 'pages/never-waste-a-hello/kehinde-ojo-author.jpg'
+          mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/dashe-books-logo.png' --output 'pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png'
+          mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js' --output 'pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js'
+          mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/salt-road-back.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/salt-road-back.png' --output 'pages/the-salt-road-to-lampedusa/assets/salt-road-back.png'
+          mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/salt-road-front.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/salt-road-front.png' --output 'pages/the-salt-road-to-lampedusa/assets/salt-road-front.png'
+          mkdir -p "$(dirname 'the-border-between-dreams-and-death/assets/index-DTfAS1to.js')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/assets/index-DTfAS1to.js' --output 'the-border-between-dreams-and-death/assets/index-DTfAS1to.js'
+          mkdir -p "$(dirname 'the-border-between-dreams-and-death/book-back.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/book-back.png' --output 'the-border-between-dreams-and-death/book-back.png'
+          mkdir -p "$(dirname 'the-border-between-dreams-and-death/book-cover.png')"
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/book-cover.png' --output 'the-border-between-dreams-and-death/book-cover.png'
+      - name: Commit media files and remove this temporary workflow
+        shell: bash
+        run: |
+          rm -f .github/workflows/restore-media.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets pages/never-waste-a-hello pages/the-salt-road-to-lampedusa the-border-between-dreams-and-death .github/workflows/restore-media.yml
+          git commit -m "Add production website media and remove temporary workflow"
+          git push

@@ -1,0 +1,10 @@
+book_assets/
+library_covers/
+sep5_assets/
+contact-*.jpg
+book-contact.jpg
+sep5-contact-*.jpg
+dashe-books-site.tar.gz
+tests/
+dist/
+node_modules/

@@ -1,0 +1,14 @@
+{
+  "project": "DaSHe Books",
+  "direction": "Kinetic editorial bookstore",
+  "design_variance": 8,
+  "motion_intensity": 8,
+  "visual_density": 4,
+  "decisions": [
+    "Use the real book covers as the primary visual system.",
+    "Use one dark ink theme with acid-chartreuse emphasis and paper catalogue surfaces.",
+    "Use native CSS and JavaScript motion with full reduced-motion support.",
+    "Keep one continuous cover stream and one controlled 3D featured carousel.",
+    "Use a single sharp-corner geometry throughout the interface."
+  ]
+}

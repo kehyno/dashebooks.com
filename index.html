@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11100d">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Kehinde Akinlolu OJO">
+  <meta name="keywords" content="Kehinde Akinlolu OJO books, DaSHe Books, African author, Christian books, personal growth books, thriller novels, poetry books, relationship books, finance books">
+  <meta name="description" content="Discover 33 books by Kehinde Akinlolu OJO across Christian faith, personal growth, thrillers, poetry, relationships, finance, society and technology.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DaSHe Books">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="DaSHe Books | Books by Kehinde Akinlolu OJO">
+  <meta property="og:description" content="Discover 33 books by Kehinde Akinlolu OJO across faith, personal growth, thrillers, poetry, relationships, finance and society.">
+  <meta property="og:url" content="https://dashebooks.com/">
+  <meta property="og:image" content="https://dashebooks.com/assets/books/be-still-and-know.webp">
+  <meta property="og:image:alt" content="Featured books by Kehinde Akinlolu OJO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DaSHe Books | Books by Kehinde Akinlolu OJO">
+  <meta name="twitter:description" content="Explore Christian faith, personal growth, thriller, poetry, relationship, finance and society books by Kehinde Akinlolu OJO.">
+  <meta name="twitter:image" content="https://dashebooks.com/assets/books/be-still-and-know.webp">
+  <base href="/">
+  <link id="canonicalUrl" rel="canonical" href="https://dashebooks.com/">
+  <title>DaSHe Books | Books by Kehinde Akinlolu OJO</title>
+  <link rel="preload" as="image" href="assets/books/be-still-and-know.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.remove('no-js')</script>
+  <script type="module" src="three-scene.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogue">Skip to the books</a>
+  <canvas id="motionCanvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand magnetic" href="#top" aria-label="DaSHe Books home">
+      <img class="brand-logo" src="assets/dashe-books-logo-on-dark.png" alt="" width="1778" height="885">
+      <img class="brand-logo brand-logo-for-light" src="assets/dashe-books-logo.png" alt="" width="1777" height="885">
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#new">Featured</a>
+      <a href="#catalogue">All books</a>
+      <a href="#author">The author</a>
+    </nav>
+    <div class="header-actions">
+      <a class="store-link magnetic" href="https://payhip.com/dashe" target="_blank" rel="noopener">Shop editions <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span class="sr-only">Open menu</span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#new">Featured</a><a href="#catalogue">All books</a><a href="#author">The author</a><a href="https://payhip.com/dashe" target="_blank" rel="noopener">Shop editions ↗</a>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="kicker reveal-text">Books by author Kehinde Akinlolu OJO</p>
+        <h1 id="heroTitle"><span class="line"><span>Stories that</span></span><span class="line italic"><span>refuse to leave.</span></span></h1>
+        <div class="hero-bottom reveal-up">
+          <p>Explore 33 books across Christian faith, personal growth, African society, poetry, relationships, finance, technology and cinematic thrillers.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#catalogue">Browse all books <span>↓</span></a>
+            <a class="secondary-action" href="https://payhip.com/dashe" target="_blank" rel="noopener">Shop editions <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stage" id="heroStage" tabindex="0" aria-label="Featured book carousel. Use left and right arrow keys to browse.">
+        <div class="stage-halo" aria-hidden="true"></div>
+        <div class="cover-deck" id="coverDeck"></div>
+        <div class="stage-caption" aria-live="polite">
+          <div><span id="heroIndex">01</span><i></i><span>06</span></div>
+          <p id="heroBookTitle">Be Still and Know</p>
+        </div>
+        <div class="hero-controls">
+          <button id="heroPrev" aria-label="Previous featured book">←</button>
+          <button id="heroPause" aria-label="Pause featured books">Ⅱ</button>
+          <button id="heroNext" aria-label="Next featured book">→</button>
+        </div>
+        <div class="hero-progress" aria-hidden="true"><span id="heroProgress"></span></div>
+      </div>
+    </section>
+
+    <section class="cover-stream" aria-label="Scrolling DaSHe Books collection">
+      <div class="stream-track" id="streamTrack"></div>
+    </section>
+
+    <section class="manifesto section" id="new">
+      <p class="section-label reveal-up">Read beyond the expected</p>
+      <div class="manifesto-copy">
+        <p class="manifesto-line"><span>One writer.</span></p>
+        <p class="manifesto-line"><span>Many worlds.</span></p>
+        <p class="manifesto-line accent"><span>Always human.</span></p>
+      </div>
+      <div class="manifesto-note reveal-up"><p>From political theology to transcontinental survival, from quiet renewal to mysteries at the edge of reason, every title begins with a question worth carrying.</p><a href="#catalogue">Choose your next question <span>↓</span></a></div>
+    </section>
+
+    <section class="spotlight section" aria-label="Selected books">
+      <article class="spotlight-item" data-speed=".08">
+        <div class="spotlight-image"><img src="assets/books/border-between-dreams-and-death.webp" alt="The Border Between Dreams and Death book cover" loading="lazy"></div>
+        <div class="spotlight-copy"><p>For readers drawn to journeys that test the body and the conscience.</p><h2>The border is not the end of the story.</h2><button class="text-action" data-open-book="The Border Between Dreams and Death">View book <span>↗</span></button></div>
+      </article>
+      <article class="spotlight-item reverse" data-speed=".06">
+        <div class="spotlight-image"><img src="assets/books/garden-within.webp" alt="The Garden Within book cover" loading="lazy"></div>
+        <div class="spotlight-copy"><p>For readers seeking stillness, healing and a gentler way back to themselves.</p><h2>Some gardens grow where nobody can see.</h2><button class="text-action" data-open-book="The Garden Within">View book <span>↗</span></button></div>
+      </article>
+      <article class="spotlight-item" data-speed=".07">
+        <div class="spotlight-image"><img src="assets/books/dialectic-of-freedom.webp" alt="The Dialectic of Freedom book cover" loading="lazy"></div>
+        <div class="spotlight-copy"><p>For readers ready to examine the difficult relationship between liberty, leadership and power.</p><h2>Freedom is never a finished argument.</h2><button class="text-action" data-open-book="The Dialectic of Freedom">View book <span>↗</span></button></div>
+      </article>
+    </section>
+
+    <section class="catalogue section" id="catalogue">
+      <div class="catalogue-head">
+        <p class="section-label reveal-up">The complete collection</p>
+        <h2 class="reveal-up">Find the book<br>that finds <i>you.</i></h2>
+        <div class="catalogue-tools reveal-up">
+          <label class="search-field"><span class="sr-only">Search books</span><input id="bookSearch" type="search" placeholder="Search title or theme" autocomplete="off"><b>⌕</b></label>
+          <p id="resultCount" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="filter-row" id="filters" aria-label="Filter books by category"></div>
+      <div class="book-grid" id="bookGrid"></div>
+      <div class="empty" id="emptyState" hidden><p>No title matches that search.</p><button id="clearSearch">Reset the collection</button></div>
+    </section>
+
+    <section class="author section" id="author">
+      <div class="author-type" aria-hidden="true"><span>K</span><span>A</span><span>O</span></div>
+      <div class="author-content">
+        <p class="section-label reveal-up">Behind the books</p>
+        <h2 class="reveal-up">A mind shaped by systems.<br>A voice drawn to people.</h2>
+        <div class="author-columns reveal-up">
+          <p>Kehinde Akinlolu OJO is an author, technology professional, researcher and educator whose work moves across fiction, faith, social thought and personal transformation.</p>
+          <p>His experience spans information technology, digital transformation, cybersecurity, healthcare and international development. That breadth gives each book its own world, while a single concern connects them all: how people survive, change and create meaning.</p>
+        </div>
+        <a class="round-link light magnetic" href="https://payhip.com/dashe" target="_blank" rel="noopener"><span>Visit the<br>author store</span><b>↗</b></a>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <p>DaSHe Books</p>
+      <h2>Open a book.<br><i>Enter differently.</i></h2>
+      <a class="store-link magnetic" href="https://payhip.com/dashe" target="_blank" rel="noopener">Browse every edition <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top" aria-label="DaSHe Books home"><img class="brand-logo" src="assets/dashe-books-logo-on-dark.png" alt="" width="1778" height="885"></a>
+    <p>Stories that move minds and stay with hearts.</p>
+    <nav aria-label="Footer navigation"><a href="#new">Featured</a><a href="#catalogue">Books</a><a href="#author">Author</a><a href="https://payhip.com/dashe" target="_blank" rel="noopener">Store ↗</a></nav>
+    <small>© <span id="year"></span> DaSHe Books. All rights reserved.</small>
+  </footer>
+
+  <dialog class="book-dialog" id="bookDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close book details">×</button>
+    <div class="dialog-cover"><img id="dialogImage" src="" alt=""></div>
+    <div class="dialog-copy"><p id="dialogCategory"></p><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-actions"><a class="primary-action" id="dialogLink" href="https://payhip.com/dashe" target="_blank" rel="noopener">Buy now <span>↗</span></a><a class="dialog-permalink" id="dialogPermalink" href="https://dashebooks.com/">Read book details</a></div></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
