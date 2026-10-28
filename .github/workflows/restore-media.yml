@@ -17,100 +17,100 @@ jobs:
         shell: bash
         run: |
           mkdir -p "$(dirname 'assets/books/abduction-catalogue.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/abduction-catalogue.webp' --output 'assets/books/abduction-catalogue.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/abduction-catalogue.webp' --output 'assets/books/abduction-catalogue.webp' || { rm -f 'assets/books/abduction-catalogue.webp'; echo 'FAILED: assets/books/abduction-catalogue.webp'; }
           mkdir -p "$(dirname 'assets/books/advance-forgiveness.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/advance-forgiveness.webp' --output 'assets/books/advance-forgiveness.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/advance-forgiveness.webp' --output 'assets/books/advance-forgiveness.webp' || { rm -f 'assets/books/advance-forgiveness.webp'; echo 'FAILED: assets/books/advance-forgiveness.webp'; }
           mkdir -p "$(dirname 'assets/books/at-thy-word.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/at-thy-word.webp' --output 'assets/books/at-thy-word.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/at-thy-word.webp' --output 'assets/books/at-thy-word.webp' || { rm -f 'assets/books/at-thy-word.webp'; echo 'FAILED: assets/books/at-thy-word.webp'; }
           mkdir -p "$(dirname 'assets/books/be-still-and-know.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/be-still-and-know.webp' --output 'assets/books/be-still-and-know.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/be-still-and-know.webp' --output 'assets/books/be-still-and-know.webp' || { rm -f 'assets/books/be-still-and-know.webp'; echo 'FAILED: assets/books/be-still-and-know.webp'; }
           mkdir -p "$(dirname 'assets/books/bermuda-triangle.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/bermuda-triangle.webp' --output 'assets/books/bermuda-triangle.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/bermuda-triangle.webp' --output 'assets/books/bermuda-triangle.webp' || { rm -f 'assets/books/bermuda-triangle.webp'; echo 'FAILED: assets/books/bermuda-triangle.webp'; }
           mkdir -p "$(dirname 'assets/books/border-between-dreams-and-death.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/border-between-dreams-and-death.webp' --output 'assets/books/border-between-dreams-and-death.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/border-between-dreams-and-death.webp' --output 'assets/books/border-between-dreams-and-death.webp' || { rm -f 'assets/books/border-between-dreams-and-death.webp'; echo 'FAILED: assets/books/border-between-dreams-and-death.webp'; }
           mkdir -p "$(dirname 'assets/books/checkmate-moment.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/checkmate-moment.webp' --output 'assets/books/checkmate-moment.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/checkmate-moment.webp' --output 'assets/books/checkmate-moment.webp' || { rm -f 'assets/books/checkmate-moment.webp'; echo 'FAILED: assets/books/checkmate-moment.webp'; }
           mkdir -p "$(dirname 'assets/books/courage-to-breathe-again.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/courage-to-breathe-again.webp' --output 'assets/books/courage-to-breathe-again.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/courage-to-breathe-again.webp' --output 'assets/books/courage-to-breathe-again.webp' || { rm -f 'assets/books/courage-to-breathe-again.webp'; echo 'FAILED: assets/books/courage-to-breathe-again.webp'; }
           mkdir -p "$(dirname 'assets/books/data-science-of-dating.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/data-science-of-dating.webp' --output 'assets/books/data-science-of-dating.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/data-science-of-dating.webp' --output 'assets/books/data-science-of-dating.webp' || { rm -f 'assets/books/data-science-of-dating.webp'; echo 'FAILED: assets/books/data-science-of-dating.webp'; }
           mkdir -p "$(dirname 'assets/books/dialectic-of-freedom.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/dialectic-of-freedom.webp' --output 'assets/books/dialectic-of-freedom.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/dialectic-of-freedom.webp' --output 'assets/books/dialectic-of-freedom.webp' || { rm -f 'assets/books/dialectic-of-freedom.webp'; echo 'FAILED: assets/books/dialectic-of-freedom.webp'; }
           mkdir -p "$(dirname 'assets/books/eat-that-frog-first.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/eat-that-frog-first.webp' --output 'assets/books/eat-that-frog-first.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/eat-that-frog-first.webp' --output 'assets/books/eat-that-frog-first.webp' || { rm -f 'assets/books/eat-that-frog-first.webp'; echo 'FAILED: assets/books/eat-that-frog-first.webp'; }
           mkdir -p "$(dirname 'assets/books/even-the-trembling-walks.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/even-the-trembling-walks.webp' --output 'assets/books/even-the-trembling-walks.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/even-the-trembling-walks.webp' --output 'assets/books/even-the-trembling-walks.webp' || { rm -f 'assets/books/even-the-trembling-walks.webp'; echo 'FAILED: assets/books/even-the-trembling-walks.webp'; }
           mkdir -p "$(dirname 'assets/books/garden-within.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/garden-within.webp' --output 'assets/books/garden-within.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/garden-within.webp' --output 'assets/books/garden-within.webp' || { rm -f 'assets/books/garden-within.webp'; echo 'FAILED: assets/books/garden-within.webp'; }
           mkdir -p "$(dirname 'assets/books/growing-minds-wired-world.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/growing-minds-wired-world.webp' --output 'assets/books/growing-minds-wired-world.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/growing-minds-wired-world.webp' --output 'assets/books/growing-minds-wired-world.webp' || { rm -f 'assets/books/growing-minds-wired-world.webp'; echo 'FAILED: assets/books/growing-minds-wired-world.webp'; }
           mkdir -p "$(dirname 'assets/books/how-to-become-dangerous.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/how-to-become-dangerous.webp' --output 'assets/books/how-to-become-dangerous.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/how-to-become-dangerous.webp' --output 'assets/books/how-to-become-dangerous.webp' || { rm -f 'assets/books/how-to-become-dangerous.webp'; echo 'FAILED: assets/books/how-to-become-dangerous.webp'; }
           mkdir -p "$(dirname 'assets/books/how-to-escape-situationships.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/how-to-escape-situationships.webp' --output 'assets/books/how-to-escape-situationships.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/how-to-escape-situationships.webp' --output 'assets/books/how-to-escape-situationships.webp' || { rm -f 'assets/books/how-to-escape-situationships.webp'; echo 'FAILED: assets/books/how-to-escape-situationships.webp'; }
           mkdir -p "$(dirname 'assets/books/improve-bone-health-ayurvedic.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/improve-bone-health-ayurvedic.webp' --output 'assets/books/improve-bone-health-ayurvedic.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/improve-bone-health-ayurvedic.webp' --output 'assets/books/improve-bone-health-ayurvedic.webp' || { rm -f 'assets/books/improve-bone-health-ayurvedic.webp'; echo 'FAILED: assets/books/improve-bone-health-ayurvedic.webp'; }
           mkdir -p "$(dirname 'assets/books/in-the-god-class.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/in-the-god-class.webp' --output 'assets/books/in-the-god-class.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/in-the-god-class.webp' --output 'assets/books/in-the-god-class.webp' || { rm -f 'assets/books/in-the-god-class.webp'; echo 'FAILED: assets/books/in-the-god-class.webp'; }
           mkdir -p "$(dirname 'assets/books/integration-or-nationalism.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/integration-or-nationalism.webp' --output 'assets/books/integration-or-nationalism.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/integration-or-nationalism.webp' --output 'assets/books/integration-or-nationalism.webp' || { rm -f 'assets/books/integration-or-nationalism.webp'; echo 'FAILED: assets/books/integration-or-nationalism.webp'; }
           mkdir -p "$(dirname 'assets/books/king-x-american-soul.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/king-x-american-soul.webp' --output 'assets/books/king-x-american-soul.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/king-x-american-soul.webp' --output 'assets/books/king-x-american-soul.webp' || { rm -f 'assets/books/king-x-american-soul.webp'; echo 'FAILED: assets/books/king-x-american-soul.webp'; }
           mkdir -p "$(dirname 'assets/books/lego-bridge-chester-le-street.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/lego-bridge-chester-le-street.webp' --output 'assets/books/lego-bridge-chester-le-street.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/lego-bridge-chester-le-street.webp' --output 'assets/books/lego-bridge-chester-le-street.webp' || { rm -f 'assets/books/lego-bridge-chester-le-street.webp'; echo 'FAILED: assets/books/lego-bridge-chester-le-street.webp'; }
           mkdir -p "$(dirname 'assets/books/light-still-lives-here.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/light-still-lives-here.webp' --output 'assets/books/light-still-lives-here.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/light-still-lives-here.webp' --output 'assets/books/light-still-lives-here.webp' || { rm -f 'assets/books/light-still-lives-here.webp'; echo 'FAILED: assets/books/light-still-lives-here.webp'; }
           mkdir -p "$(dirname 'assets/books/lust-for-more.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/lust-for-more.webp' --output 'assets/books/lust-for-more.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/lust-for-more.webp' --output 'assets/books/lust-for-more.webp' || { rm -f 'assets/books/lust-for-more.webp'; echo 'FAILED: assets/books/lust-for-more.webp'; }
           mkdir -p "$(dirname 'assets/books/man-with-seven-names.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/man-with-seven-names.webp' --output 'assets/books/man-with-seven-names.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/man-with-seven-names.webp' --output 'assets/books/man-with-seven-names.webp' || { rm -f 'assets/books/man-with-seven-names.webp'; echo 'FAILED: assets/books/man-with-seven-names.webp'; }
           mkdir -p "$(dirname 'assets/books/mindful-morning.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/mindful-morning.webp' --output 'assets/books/mindful-morning.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/mindful-morning.webp' --output 'assets/books/mindful-morning.webp' || { rm -f 'assets/books/mindful-morning.webp'; echo 'FAILED: assets/books/mindful-morning.webp'; }
           mkdir -p "$(dirname 'assets/books/mystery-of-blood.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/mystery-of-blood.webp' --output 'assets/books/mystery-of-blood.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/mystery-of-blood.webp' --output 'assets/books/mystery-of-blood.webp' || { rm -f 'assets/books/mystery-of-blood.webp'; echo 'FAILED: assets/books/mystery-of-blood.webp'; }
           mkdir -p "$(dirname 'assets/books/neither-do-i-condemn-you.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/neither-do-i-condemn-you.webp' --output 'assets/books/neither-do-i-condemn-you.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/neither-do-i-condemn-you.webp' --output 'assets/books/neither-do-i-condemn-you.webp' || { rm -f 'assets/books/neither-do-i-condemn-you.webp'; echo 'FAILED: assets/books/neither-do-i-condemn-you.webp'; }
           mkdir -p "$(dirname 'assets/books/never-waste-a-hello.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/never-waste-a-hello.webp' --output 'assets/books/never-waste-a-hello.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/never-waste-a-hello.webp' --output 'assets/books/never-waste-a-hello.webp' || { rm -f 'assets/books/never-waste-a-hello.webp'; echo 'FAILED: assets/books/never-waste-a-hello.webp'; }
           mkdir -p "$(dirname 'assets/books/salt-road-to-lampedusa.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/salt-road-to-lampedusa.webp' --output 'assets/books/salt-road-to-lampedusa.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/salt-road-to-lampedusa.webp' --output 'assets/books/salt-road-to-lampedusa.webp' || { rm -f 'assets/books/salt-road-to-lampedusa.webp'; echo 'FAILED: assets/books/salt-road-to-lampedusa.webp'; }
           mkdir -p "$(dirname 'assets/books/stars-trees-echoes.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/stars-trees-echoes.webp' --output 'assets/books/stars-trees-echoes.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/stars-trees-echoes.webp' --output 'assets/books/stars-trees-echoes.webp' || { rm -f 'assets/books/stars-trees-echoes.webp'; echo 'FAILED: assets/books/stars-trees-echoes.webp'; }
           mkdir -p "$(dirname 'assets/books/way-of-clarity.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/way-of-clarity.webp' --output 'assets/books/way-of-clarity.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/way-of-clarity.webp' --output 'assets/books/way-of-clarity.webp' || { rm -f 'assets/books/way-of-clarity.webp'; echo 'FAILED: assets/books/way-of-clarity.webp'; }
           mkdir -p "$(dirname 'assets/books/wealth-operating-system.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/wealth-operating-system.webp' --output 'assets/books/wealth-operating-system.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/wealth-operating-system.webp' --output 'assets/books/wealth-operating-system.webp' || { rm -f 'assets/books/wealth-operating-system.webp'; echo 'FAILED: assets/books/wealth-operating-system.webp'; }
           mkdir -p "$(dirname 'assets/books/when-no-one-else-will.webp')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/when-no-one-else-will.webp' --output 'assets/books/when-no-one-else-will.webp'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/books/when-no-one-else-will.webp' --output 'assets/books/when-no-one-else-will.webp' || { rm -f 'assets/books/when-no-one-else-will.webp'; echo 'FAILED: assets/books/when-no-one-else-will.webp'; }
           mkdir -p "$(dirname 'assets/dashe-books-logo-on-dark.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo-on-dark.png' --output 'assets/dashe-books-logo-on-dark.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo-on-dark.png' --output 'assets/dashe-books-logo-on-dark.png' || { rm -f 'assets/dashe-books-logo-on-dark.png'; echo 'FAILED: assets/dashe-books-logo-on-dark.png'; }
           mkdir -p "$(dirname 'assets/dashe-books-logo-seven-names.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo-seven-names.png' --output 'assets/dashe-books-logo-seven-names.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo-seven-names.png' --output 'assets/dashe-books-logo-seven-names.png' || { rm -f 'assets/dashe-books-logo-seven-names.png'; echo 'FAILED: assets/dashe-books-logo-seven-names.png'; }
           mkdir -p "$(dirname 'assets/dashe-books-logo.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo.png' --output 'assets/dashe-books-logo.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/assets/dashe-books-logo.png' --output 'assets/dashe-books-logo.png' || { rm -f 'assets/dashe-books-logo.png'; echo 'FAILED: assets/dashe-books-logo.png'; }
           mkdir -p "$(dirname 'pages/never-waste-a-hello/back-cover.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/back-cover.png' --output 'pages/never-waste-a-hello/back-cover.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/back-cover.png' --output 'pages/never-waste-a-hello/back-cover.png' || { rm -f 'pages/never-waste-a-hello/back-cover.png'; echo 'FAILED: pages/never-waste-a-hello/back-cover.png'; }
           mkdir -p "$(dirname 'pages/never-waste-a-hello/cover.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/cover.png' --output 'pages/never-waste-a-hello/cover.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/cover.png' --output 'pages/never-waste-a-hello/cover.png' || { rm -f 'pages/never-waste-a-hello/cover.png'; echo 'FAILED: pages/never-waste-a-hello/cover.png'; }
           mkdir -p "$(dirname 'pages/never-waste-a-hello/dashe-books-logo.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/dashe-books-logo.png' --output 'pages/never-waste-a-hello/dashe-books-logo.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/dashe-books-logo.png' --output 'pages/never-waste-a-hello/dashe-books-logo.png' || { rm -f 'pages/never-waste-a-hello/dashe-books-logo.png'; echo 'FAILED: pages/never-waste-a-hello/dashe-books-logo.png'; }
           mkdir -p "$(dirname 'pages/never-waste-a-hello/kehinde-ojo-author.jpg')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/kehinde-ojo-author.jpg' --output 'pages/never-waste-a-hello/kehinde-ojo-author.jpg'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/never-waste-a-hello/kehinde-ojo-author.jpg' --output 'pages/never-waste-a-hello/kehinde-ojo-author.jpg' || { rm -f 'pages/never-waste-a-hello/kehinde-ojo-author.jpg'; echo 'FAILED: pages/never-waste-a-hello/kehinde-ojo-author.jpg'; }
           mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/dashe-books-logo.png' --output 'pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/dashe-books-logo.png' --output 'pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png' || { rm -f 'pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png'; echo 'FAILED: pages/the-salt-road-to-lampedusa/assets/dashe-books-logo.png'; }
           mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js' --output 'pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js' --output 'pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js' || { rm -f 'pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js'; echo 'FAILED: pages/the-salt-road-to-lampedusa/assets/index-BXDm2d3O.js'; }
           mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/salt-road-back.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/salt-road-back.png' --output 'pages/the-salt-road-to-lampedusa/assets/salt-road-back.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/salt-road-back.png' --output 'pages/the-salt-road-to-lampedusa/assets/salt-road-back.png' || { rm -f 'pages/the-salt-road-to-lampedusa/assets/salt-road-back.png'; echo 'FAILED: pages/the-salt-road-to-lampedusa/assets/salt-road-back.png'; }
           mkdir -p "$(dirname 'pages/the-salt-road-to-lampedusa/assets/salt-road-front.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/salt-road-front.png' --output 'pages/the-salt-road-to-lampedusa/assets/salt-road-front.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-salt-road-to-lampedusa/assets/salt-road-front.png' --output 'pages/the-salt-road-to-lampedusa/assets/salt-road-front.png' || { rm -f 'pages/the-salt-road-to-lampedusa/assets/salt-road-front.png'; echo 'FAILED: pages/the-salt-road-to-lampedusa/assets/salt-road-front.png'; }
           mkdir -p "$(dirname 'the-border-between-dreams-and-death/assets/index-DTfAS1to.js')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/assets/index-DTfAS1to.js' --output 'the-border-between-dreams-and-death/assets/index-DTfAS1to.js'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/assets/index-DTfAS1to.js' --output 'the-border-between-dreams-and-death/assets/index-DTfAS1to.js' || { rm -f 'the-border-between-dreams-and-death/assets/index-DTfAS1to.js'; echo 'FAILED: the-border-between-dreams-and-death/assets/index-DTfAS1to.js'; }
           mkdir -p "$(dirname 'the-border-between-dreams-and-death/book-back.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/book-back.png' --output 'the-border-between-dreams-and-death/book-back.png'
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/book-back.png' --output 'the-border-between-dreams-and-death/book-back.png' || { rm -f 'the-border-between-dreams-and-death/book-back.png'; echo 'FAILED: the-border-between-dreams-and-death/book-back.png'; }
           mkdir -p "$(dirname 'the-border-between-dreams-and-death/book-cover.png')"
-          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/book-cover.png' --output 'the-border-between-dreams-and-death/book-cover.png'
-      - name: Commit media files and remove this temporary workflow
+          curl --fail --silent --show-error --location 'https://dashebooks.com/the-border-between-dreams-and-death/book-cover.png' --output 'the-border-between-dreams-and-death/book-cover.png' || { rm -f 'the-border-between-dreams-and-death/book-cover.png'; echo 'FAILED: the-border-between-dreams-and-death/book-cover.png'; }
+      - name: Commit downloaded media and remove this temporary workflow
         shell: bash
         run: |
           rm -f .github/workflows/restore-media.yml
